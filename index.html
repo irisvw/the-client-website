@@ -10,10 +10,10 @@
 
 <body>
     <header>
+        <div> <!-- Logo -->
+            <h1>Qatar Museums</h1>
+        </div>
         <nav> <!-- Nav bar -->
-            <div> <!-- Logo -->
-                <h1>Qatar Museums</h1>
-            </div>
             <ul> <!-- Links -->
                 <li><a href="#">Stories</a></li>
                 <li><a href="#">What's On</a></li>
@@ -27,20 +27,21 @@
             </ul>
         </nav>
     </header>
-    <hr> <!-- temp -->
+
     <main>
-        <section> <!-- Gallery. Section or div? (no header)-->
-            <a href="#"><img src="assets/nmq1.jpg" alt=""></a>
-            <a href="#"><img src="assets/nmq2.jpg" alt=""></a>
-            <a href="#"><img src="assets/nmq3.jpg" alt=""></a><br> <!-- temp br-->
-            <a href="#"><img src="assets/nmq2.jpg" alt=""></a>
-            <a href="#"><img src="assets/nmq3.jpg" alt=""></a>
-            <a href="#"><img src="assets/nmq1.jpg" alt=""></a><br> <!-- temp br-->
-            <a href="#"><img src="assets/nmq3.jpg" alt=""></a>
-            <a href="#"><img src="assets/nmq1.jpg" alt=""></a>
-            <a href="#"><img src="assets/nmq2.jpg" alt=""></a>
-        </section>
-        <section> <!-- Search - use a nav? -->
+        <!-- Gallery. Section or div? (no header)-->
+        <ul class="gallery">
+            <li><a href="#"><img width='250px' src="assets/nmq1.jpg" alt=""></a></li>
+            <li><a href="#"><img width='250px' src="assets/nmq2.jpg" alt=""></a></li>
+            <li><a href="#"><img width='250px' src="assets/nmq3.jpg" alt=""></a></li>
+            <li><a href="#"><img width='250px' src="assets/nmq2.jpg" alt=""></a></li>
+            <li><a href="#"><img width='250px' src="assets/nmq3.jpg" alt=""></a></li>
+            <li><a href="#"><img width='250px' src="assets/nmq1.jpg" alt=""></a></li>
+            <li><a href="#"><img width='250px' src="assets/nmq3.jpg" alt=""></a></li>
+            <li><a href="#"><img width='250px' src="assets/nmq1.jpg" alt=""></a></li>
+            <li><a href="#"><img width='250px' src="assets/nmq2.jpg" alt=""></a></li>
+        </ul>
+        <div class="filters"> <!-- Search - use a nav? -->
             <ul>
                 <li><button>All Objects</button></li>
                 <li><button>Pottery</button></li>
@@ -48,8 +49,8 @@
                 <li><button>Tapestry</button></li>
                 <li><button>Glass</button></li>
             </ul>
-            <input type="text" placeholder="Search the collection">
-        </section>
+            <input type="search" placeholder="Search the collection"><button>Search</button>
+        </div>
     </main>
     <!-- No footer - page scrolls infinitely. -->
 </body>
