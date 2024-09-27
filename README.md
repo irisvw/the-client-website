@@ -1,7 +1,7 @@
 # The Client - Website
 
-![alt text](assets/img.png)
-![alt text](assets/img_1.png)
+![design desktop](assets/img.png)
+![design mobile](assets/img_1.png)
 
 ## Design challenge
 Design and develop new features for the Qatar Museums Online Collection website.
