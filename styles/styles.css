@@ -144,7 +144,8 @@ button {
     grid-auto-rows: 0;
 } */
 
-.gallery {
+ul.gallery {
+    display: block;
     column-width: clamp(150px, 300px, 15vw)
 }
 
@@ -169,6 +170,17 @@ button {
     font-family: "Cairo", sans-serif;
     font-weight: 800;
 }
+
+/* https://www.a11yproject.com/posts/how-to-hide-content/ */
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 
 @media screen and (min-width: 800px) {
     nav {
