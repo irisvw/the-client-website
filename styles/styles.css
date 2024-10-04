@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -20,6 +21,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    max-width: 100%;
 
     border-bottom: 1px solid black;
     box-shadow: rgba(0, 0, 0, 0.15)2px 2px 2.5px;
@@ -117,13 +119,14 @@ img {
     }
 }
 
-.button-members,
-.button-venues,
-.button-language {
+button.button-members,
+button.button-venues,
+button.button-language {
     display: none;
 }
 
 button.button-tickets {
+    display: none;
     padding: 1em;
     background-color: yellow;
     border: 1px solid black;
@@ -161,11 +164,13 @@ ul.gallery {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    max-width: 100%;
 
     li>button {
         display: block;
         padding: 1rem;
         background-color: grey;
+        min-width: 8rem;
         color: white;
         border: none;
         position: relative;
@@ -174,19 +179,25 @@ ul.gallery {
     input[type=search] {
         padding: .5rem;
         font-size: clamp(1rem, 1.5rem, 2rem);
-        min-width: 30ch;
+        width: 30rem;
         max-width: 100%;
         border: none;
     }
 
+    input[type=search]:active, input[type=search]:focus {
+        border: none;
+        outline: none;
+    }
+
     form {
         background-color: white;
-        border-radius: 5px;
         border: 1px solid black;
 
         display: flex;
         flex-direction: row;
         align-items: center;
+
+        max-width: 100%;
       }
 
       button.button-search {
@@ -211,6 +222,12 @@ ul.gallery {
     white-space: nowrap;
     width: 1px;
   }
+
+@media screen and (min-width: 500px) {
+    button.button-tickets {
+        display: flex;
+    }
+}
 
 @media screen and (min-width: 800px) {
     nav {
