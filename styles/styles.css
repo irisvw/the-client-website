@@ -97,7 +97,7 @@ img {
     margin-bottom: 1em;
 }
 
-button {
+.buttons button {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -123,14 +123,14 @@ button {
     display: none;
 }
 
-.button-tickets {
+button.button-tickets {
     padding: 1em;
     background-color: yellow;
     border: 1px solid black;
     transition: .15s ease-in-out;
 }
 
-.button-tickets:hover {
+button.button-tickets:hover {
     background-color: black;
     color: white;
     text-decoration: none;
@@ -157,13 +157,43 @@ ul.gallery {
     left: 0;
     right: 0;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     li>button {
+        display: block;
         padding: 1rem;
         background-color: grey;
         color: white;
         border: none;
+        position: relative;
     }
+
+    input[type=search] {
+        padding: .5rem;
+        font-size: clamp(1rem, 1.5rem, 2rem);
+        min-width: 30ch;
+        max-width: 100%;
+        border: none;
+    }
+
+    form {
+        background-color: white;
+        border-radius: 5px;
+        border: 1px solid black;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      button.button-search {
+        background-color: white;
+        border: none;
+        padding: .5rem;
+      }
 }
 
 *:lang(ar) {
@@ -184,7 +214,6 @@ ul.gallery {
 
 @media screen and (min-width: 800px) {
     nav {
-
         .button-members,
         .button-venues,
         .button-language {
