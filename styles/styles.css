@@ -13,10 +13,14 @@ body {
     max-width: 100vw;
 }
 
-main {}
+body,
+button,
+input {
+    text-transform: uppercase;
+}
 
 /* || HEADER */
-header {
+body>header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,15 +32,16 @@ header {
     padding: 0 1em;
 }
 
+/* LOGO */
+h2 {
+    font-size: 18px;
+    max-width: 100%;
+}
+
 .logo {
     display: grid;
     grid-template-rows: 40px 40px;
     grid-template-columns: 100px 150px;
-}
-
-h1 {
-    font-size: 18px;
-    max-width: 100%;
 }
 
 .logo-svg {
@@ -56,10 +61,11 @@ a {
     color: black;
 }
 
+/* NAV */
 nav {
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 1rem;
 
     ul>li {
         display: flex;
@@ -73,6 +79,15 @@ nav {
 
     .links {
         display: none;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    nav {
+        .links {
+            display: flex;
+        }
     }
 }
 
@@ -82,47 +97,47 @@ ul {
     justify-content: center;
 }
 
-li {}
-
-.filters ul {
-    gap: .5rem;
-}
-
-body,
-button,
-input {
-    text-transform: uppercase;
-}
-
 img {
     width: 100%;
     margin-bottom: 1em;
 }
 
-.buttons button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    vertical-align: baseline;
-    gap: .3em;
+.buttons {
+    gap: 1rem;
 
-    font-family: "IBM Plex Sans", sans-serif;
-    font-size: 1rem;
-    letter-spacing: -1px;
-    font-weight: 800;
-    height: 4em;
-    background-color: white;
-    border: none;
+    button {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        vertical-align: baseline;
+        gap: .3em;
 
-    svg {
-        height: 2em;
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 1rem;
+        letter-spacing: -1px;
+        font-weight: 800;
+        height: 4em;
+        background-color: white;
+        border: none;
+
+        svg {
+            height: 2em;
+        }
     }
 }
 
-button.button-members,
-button.button-venues,
-button.button-language {
+li:has(.button-members),
+li:has(.button-venues),
+li:has(.button-language) {
     display: none;
+}
+
+@media screen and (min-width: 800px) {
+    li:has(.button-members),
+    li:has(.button-venues),
+    li:has(.button-language) {
+        display: flex;
+    }
 }
 
 button.button-tickets {
@@ -139,6 +154,12 @@ button.button-tickets:hover {
     text-decoration: none;
 }
 
+@media screen and (min-width: 500px) {
+    button.button-tickets {
+        display: flex;
+    }
+}
+
 /* .gallery {
     display: grid;
     grid-gap: 10px;
@@ -147,11 +168,14 @@ button.button-tickets:hover {
     grid-auto-rows: 0;
 } */
 
+/* || MAIN */
 ul.gallery {
     display: block;
     column-width: clamp(150px, 300px, 15vw)
 }
 
+
+/* || FILTERS */
 .filters {
     position: fixed;
     bottom: 0px;
@@ -170,13 +194,18 @@ ul.gallery {
     ul {
         max-width: 100vw;
         overflow: scroll;
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+        justify-content: left;
+        gap: .5rem;
+        padding: 0 1rem;
     }
 
     ul::-webkit-scrollbar {
         display: none;
-      }
+    }
 
     li>button {
         display: block;
@@ -187,6 +216,19 @@ ul.gallery {
         border: none;
         position: relative;
         font-size: 1rem;
+    }
+
+    /* SEARCH BAR */
+    form {
+        background-color: white;
+        border: 1px solid black;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        width: 50rem;
+        max-width: 100%;
     }
 
     input[type=search] {
@@ -203,18 +245,6 @@ ul.gallery {
     input[type=search]:focus {
         border: none;
         outline: none;
-    }
-
-    form {
-        background-color: white;
-        border: 1px solid black;
-
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        width: 50rem;
-        max-width: 100%;
     }
 
     button.button-search {
@@ -238,36 +268,6 @@ ul.gallery {
     position: absolute;
     white-space: nowrap;
     width: 1px;
-}
-
-@media screen and (min-width: 500px) {
-    button.button-tickets {
-        display: flex;
-    }
-}
-
-@media screen and (min-width: 800px) {
-    nav {
-
-        .button-members,
-        .button-venues,
-        .button-language {
-            display: flex;
-        }
-
-        li {
-            padding: .5rem;
-        }
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    nav {
-        .links {
-            display: flex;
-            gap: .5rem;
-        }
-    }
 }
 
 /* "CSS HEEFT HIER DINGEN VOOR?" - KRIJN 
