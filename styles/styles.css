@@ -25,15 +25,18 @@ body>header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     max-width: 100%;
+    background-color: white;
 
     border-bottom: 1px solid black;
     box-shadow: rgba(0, 0, 0, 0.15)2px 2px 2.5px;
     padding: 0 1em;
+    /* position: fixed; */
 }
 
 /* LOGO */
-header > p {
+header>p {
     font-size: 18px;
     max-width: 100%;
 }
@@ -100,6 +103,7 @@ ul {
 img {
     width: 100%;
     margin-bottom: 1em;
+    transition: all 0.1s;
 }
 
 .buttons {
@@ -133,6 +137,7 @@ li:has(.button-language) {
 }
 
 @media screen and (min-width: 800px) {
+
     li:has(.button-members),
     li:has(.button-venues),
     li:has(.button-language) {
@@ -186,8 +191,10 @@ ul.gallery {
     ul {
         max-width: 100vw;
         overflow: scroll;
-        -ms-overflow-style: none; /* IE and Edge */
-        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
         justify-content: left;
         gap: .5rem;
         padding: 0 1rem;
@@ -203,13 +210,14 @@ ul.gallery {
         background-color: #464646;
         min-width: 9rem;
         color: white;
-        border: none;
+        border: 1px solid #464646;
         position: relative;
         font-size: 1rem;
         transition: all 0.1s;
     }
 
-    li>button:focus {
+    li>button:focus,
+    li>button:hover {
         background-color: white;
         color: #464646;
         border: 1px solid #464646;
@@ -266,6 +274,10 @@ ul.gallery {
     position: absolute;
     white-space: nowrap;
     width: 1px;
+}
+
+.dim {
+    filter: brightness(60%);
 }
 
 /* "CSS HEEFT HIER DINGEN VOOR?" - KRIJN 
