@@ -12,6 +12,8 @@
 <img src="https://github.com/user-attachments/assets/859a293a-64b0-465e-9b90-7f6890e1d59e" height="430">
 <img src="https://github.com/user-attachments/assets/3c69aa57-3e8e-49cc-9482-10096e864cb4" height="430">
 
+Om de collectie weer te geven, heeft Qatar Museums een nieuwe pagina nodig. Met behulp van filters en een zoekbalk kunnen gebruikers kunstwerken zoeken en meer informatie vinden.
+De pagina is responsive en is mobile first gemaakt.
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 https://irisvw.github.io/the-client-website/
@@ -69,7 +71,10 @@ work in any major desktop browser.
 - Hamburger (menu overlay) can be dismissed
 - Search is just a field, no endpoint
 
-
+## Bronnen
+Fonts:
+[IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans)
+[Cairo](https://fonts.google.com/specimen/Cairo)
 
 ## Licentie
 
