@@ -73,8 +73,8 @@ work in any major desktop browser.
 
 ## Bronnen
 Fonts:
-[IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans)
-[Cairo](https://fonts.google.com/specimen/Cairo)
+- [IBM Plex Sans](https://fonts.google.com/specimen/IBM+Plex+Sans)
+- [Cairo](https://fonts.google.com/specimen/Cairo)
 
 ## Licentie
 
