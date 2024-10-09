@@ -54,8 +54,18 @@ work in any major desktop browser.
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
+<img src="https://github.com/user-attachments/assets/4b1ff198-586d-466f-b57a-109382b5b19f" width="595">
+<img src="https://github.com/user-attachments/assets/859a293a-64b0-465e-9b90-7f6890e1d59e" height="430">
+<img src="https://github.com/user-attachments/assets/3c69aa57-3e8e-49cc-9482-10096e864cb4" height="430">
+
+Features:
+- Responsive
+- Accessible
+- Multilingual
+
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
+https://irisvw.github.io/the-client-website/
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
