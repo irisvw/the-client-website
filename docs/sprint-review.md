@@ -2,7 +2,7 @@
 ## Vragen
 ### Hoe werkt de "randomized on load"? 
 - Q: Maakt de website één API call, op het moment dat de website geladen wordt? Wordt er extra context geladen als de gebruiker een bepaalde hoeveelheid heeft gescrolld? Wordt een set afbeeldingen geladen, en worden die dan willekeurig herhaald op het canvas als de gebruiker scrollt? Is dat wel gebruikersvriendelijk?
-- A: Eigen interpretatie. Randomness kan niet voorkomen worden. Genoeg om op het scherm te tonen.
+- A: Eigen interpretatie. Randomness kan niet voorkomen worden. Er worden in ieder geval genoeg afbeeldingen geladen om het scherm te vullen.
 
 ### Hoe werkt de keyboard navigatie?
 - Q: Als het canvas infinite is, dan zou je er niet meer uit kunnen navigeren met tab. Hoe kan een gebruiker bij een specifieke afbeelding komen? Hoe kan een gebruiker uit het infinite canvas komen?
