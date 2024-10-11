@@ -23,6 +23,9 @@ https://irisvw.github.io/the-client-website/
 - Responsive
 - Accessible
 - Multilingual
+- API driven
+- Filterable (on hover)
+
 
 ---
 https://github.com/fdnd-agency/fabrique/tree/design-challenge
